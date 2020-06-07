@@ -44,7 +44,6 @@ public class Operations extends Application {
         outputText.setEditable(false);
         codeText.setMinSize(500, 500);
         codeText.setEditable(false);
-
         gridPane.setMinSize(900, 700);
         gridPane.setPadding(new Insets(10, 10, 10, 10));
         gridPane.setVgap(5);
