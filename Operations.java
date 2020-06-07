@@ -4,7 +4,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
 
 import java.io.FileNotFoundException;
@@ -42,7 +41,10 @@ public class Operations extends Application {
         IntStream.range(0, buttons.size()).forEach(i -> addNewButton(buttons.get(i).getButton(), i + 1));
 
         outputText.setMinSize(900, 250);
+        outputText.setEditable(false);
         codeText.setMinSize(500, 500);
+        codeText.setEditable(false);
+
         gridPane.setMinSize(900, 700);
         gridPane.setPadding(new Insets(10, 10, 10, 10));
         gridPane.setVgap(5);
